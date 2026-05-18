@@ -4,21 +4,21 @@ const styles = `
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --primary: #0f172a;
-    --accent: #6366f1;
-    --accent-light: #818cf8;
-    --bg: #f8fafc;
-    --card: #ffffff;
-    --text: #334155;
-    --muted: #64748b;
-    --border: #e2e8f0;
+    --primary: #e2e8f0;
+    --accent: #818cf8;
+    --accent-light: #a5b4fc;
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #cbd5e1;
+    --muted: #94a3b8;
+    --border: #334155;
   }
 
   html { scroll-behavior: smooth; }
 
   body {
     font-family: 'Inter', sans-serif;
-    background: var(--bg);
+    background: #0f172a;
     color: var(--text);
     line-height: 1.7;
   }
@@ -71,92 +71,92 @@ const styles = `
   .btn-outline { border: 1px solid #475569; color: #cbd5e1; }
   .btn-outline:hover { border-color: var(--accent-light); color: var(--accent-light); }
 
-  section { padding: 5rem 2rem; }
+  section { padding: 5rem 2rem; background: #0f172a; }
   .container { max-width: 1000px; margin: 0 auto; }
   .section-label {
     font-size: 0.78rem; font-weight: 600; letter-spacing: 2px;
     text-transform: uppercase; color: var(--accent); margin-bottom: 0.4rem;
   }
-  h2 { font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 2.5rem; }
+  h2 { font-size: 2rem; font-weight: 700; color: #e2e8f0; margin-bottom: 2.5rem; }
 
   .about-card {
-    background: var(--card);
-    border: 1px solid var(--border);
+    background: #1e293b;
+    border: 1px solid #334155;
     border-radius: 16px;
     padding: 2.5rem;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
   }
-  .about-card p { font-size: 1.05rem; color: var(--text); }
+  .about-card p { font-size: 1.05rem; color: #cbd5e1; }
 
-  .skills-bg { background: #fff; }
+  .skills-bg { background: #0d1424; }
   .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
   .skill-card {
-    background: var(--bg);
-    border: 1px solid var(--border);
+    background: #1e293b;
+    border: 1px solid #334155;
     border-radius: 14px;
     padding: 1.8rem;
     transition: transform 0.2s, box-shadow 0.2s;
   }
-  .skill-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(99,102,241,0.1); }
+  .skill-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(129,140,248,0.15); }
   .skill-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
-  .skill-card h3 { font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.8rem; }
+  .skill-card h3 { font-size: 1rem; font-weight: 700; color: #e2e8f0; margin-bottom: 0.8rem; }
   .skill-card ul { list-style: none; }
-  .skill-card li { font-size: 0.9rem; color: var(--muted); padding: 0.3rem 0; border-bottom: 1px solid var(--border); }
+  .skill-card li { font-size: 0.9rem; color: #94a3b8; padding: 0.3rem 0; border-bottom: 1px solid #334155; }
   .skill-card li:last-child { border-bottom: none; }
 
   .edu-list { display: flex; flex-direction: column; gap: 1.2rem; }
   .edu-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-left: 4px solid var(--accent);
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-left: 4px solid #818cf8;
     border-radius: 12px;
     padding: 1.5rem 2rem;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
   }
-  .edu-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--primary); }
-  .edu-card .school { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .edu-card h3 { font-size: 1.05rem; font-weight: 700; color: #e2e8f0; }
+  .edu-card .school { color: #94a3b8; font-size: 0.9rem; margin-top: 0.3rem; }
   .edu-card .grade {
     display: inline-block; margin-top: 0.6rem;
-    background: #ede9fe; color: #6d28d9;
+    background: rgba(129,140,248,0.15); color: #a5b4fc;
     padding: 0.2rem 0.8rem; border-radius: 999px;
     font-size: 0.8rem; font-weight: 600;
   }
 
-  .intern-bg { background: #fff; }
+  .intern-bg { background: #0d1424; }
   .intern-card {
-    background: linear-gradient(135deg, #f0f4ff, #faf5ff);
-    border: 1px solid #c7d2fe;
+    background: linear-gradient(135deg, #1e293b, #1a1f35);
+    border: 1px solid #334155;
     border-radius: 16px;
     padding: 2rem 2.5rem;
   }
-  .intern-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.8rem; }
-  .intern-card p { color: var(--text); font-size: 0.95rem; }
+  .intern-card h3 { font-size: 1.1rem; font-weight: 700; color: #e2e8f0; margin-bottom: 0.8rem; }
+  .intern-card p { color: #94a3b8; font-size: 0.95rem; }
 
   .project-card {
-    background: var(--card);
-    border: 1px solid var(--border);
+    background: #1e293b;
+    border: 1px solid #334155;
     border-radius: 16px;
     padding: 2.5rem;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
   }
-  .project-card h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem; }
-  .project-card p { color: var(--text); font-size: 0.95rem; margin-bottom: 1.2rem; }
+  .project-card h3 { font-size: 1.3rem; font-weight: 700; color: #e2e8f0; margin-bottom: 1rem; }
+  .project-card p { color: #94a3b8; font-size: 0.95rem; margin-bottom: 1.2rem; }
   .tech-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
   .tag {
-    background: #ede9fe; color: #5b21b6;
+    background: rgba(129,140,248,0.15); color: #a5b4fc;
     padding: 0.3rem 0.9rem; border-radius: 999px;
     font-size: 0.8rem; font-weight: 600;
   }
 
-  .achieve-bg { background: #fff; }
+  .achieve-bg { background: #0d1424; }
   .achieve-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
   .achieve-list li {
-    background: var(--bg);
-    border: 1px solid var(--border);
+    background: #1e293b;
+    border: 1px solid #334155;
     border-radius: 10px;
     padding: 1rem 1.5rem;
     display: flex; align-items: center; gap: 1rem;
-    font-size: 0.95rem; color: var(--text);
+    font-size: 0.95rem; color: #cbd5e1;
   }
   .achieve-list li::before { content: '🏆'; font-size: 1.2rem; flex-shrink: 0; }
 
